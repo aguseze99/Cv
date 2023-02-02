@@ -1,0 +1,219 @@
+*{
+    display: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.contenedor-imagen{
+   
+    display: flex;
+    height: 36vh;
+    justify-content: center;
+    
+    width: 400% 300%;
+    background: linear-gradient(150deg, #9b2525, #601010, #340101);
+    
+   
+    
+    
+   
+}
+
+
+
+.contenedor-imagen .imagen{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    top: 200px;
+    border-radius: 50%;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    
+    
+    
+
+}
+
+.contenedor-imagen .imagen img{
+    
+    width: 100%;
+    border-radius: 60%;
+    object-fit: cover;
+    
+    
+    
+}
+
+.presentacion{
+    display: flex;
+    position: relative;
+    
+    margin: 70px auto;
+    width: 300px;
+    text-align: center;
+}
+
+.contenedor-botones{
+    width: 100%;
+    position: absolute;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+
+
+
+.btn-general {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #701212;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 auto;
+
+  }
+  
+  .btn-general span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-general span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-general:hover span {
+    padding-right: 20px;
+  }
+  
+  .btn-general:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .ocultar{
+    display: none;
+  }
+
+  .mostrar{
+    display:block;
+    position: absolute;
+    
+}
+
+  .experiencia{
+    width: 200px;
+    top: 60px;
+    left: 91px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.46);
+    z-index: -1;
+  }  
+
+  .skills{
+    width: 200px;
+    left: 471px;
+    top: 60px;
+    background-color: rgba(128, 128, 128, 0.46);
+    z-index: -1;
+    
+}
+
+.skills  li{
+    
+    list-style: none;
+    text-align: center;
+}
+
+.skills li img{
+    margin-bottom: 20px;
+    
+
+}
+
+.objetivos{
+    width: 200px;
+    left: 860px;
+    top: 60px;
+    background-color: rgba(128, 128, 128, 0.46);
+    z-index: -1;
+}
+
+.objetivos li{
+    text-align: left;
+    list-style: none;
+}
+
+.cualidades{
+    width: 200px;
+    background-color: rgba(128, 128, 128, 0.46);
+    z-index: -1;
+    padding: 10px;
+    top:60px;
+    left: 1244px;
+}
+
+.cualidades li{
+    list-style: none;
+    margin-bottom: 10px;
+    
+}
+
+@media (max-width: 767px) {
+    .contenedor-imagen {
+      height: auto;
+      width: 100%;
+    }
+  
+    .contenedor-imagen .imagen {
+      width: 50%;
+      height: auto;
+    }
+  
+    .presentacion {
+      width: 90%;
+      margin-top: 200px
+    }
+  
+    .contenedor-botones {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .btn-General {
+      width: 90%;
+      margin: 10px auto;
+      
+    }
+  
+    .experiencia, .skills, .objetivos, .cualidades {
+      left: 0;
+      width: 90%;
+      top: auto;
+      bottom: 10px;
+      position: relative;
+      margin: 20px;
+    }
+  }
+  
+    
